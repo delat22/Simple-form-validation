@@ -1,0 +1,120 @@
+/***** General *****/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: serif;
+    padding-top: 1em;
+    font-weight: 500;
+    
+}
+
+main{
+    width: 90vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 6px black;
+    background-color: #fff;
+    margin: 4em auto;
+ }
+
+ h2{
+     font-size: 2rem;
+     font-weight: 400;
+ }
+/******Content Styling****/
+
+.container-1, .container-2{
+    padding-left: 2rem;
+}
+
+.input-fm{
+    width: 55%;
+    height: 2.2rem;
+    border: transparent;
+    border-bottom: 1px solid #ccc;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.input-fm:focus{
+    border: transparent;
+    border-bottom: 1px solid cornflowerblue;
+    outline: none;
+}
+
+.input-2{
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+}
+
+.invalid{
+    font-size: 0.8em;
+}
+
+.btn{
+    padding: 2em;
+}
+
+/******Accesibility*****/
+
+input:required {
+    border-left: 4px solid #c33;
+    border-bottom: 0.5px solid #c33;
+  }
+  input:required:hover{
+      border-top: 0.5px solid pink;
+      border-right: 0.5px solid pink;
+      border-left: 4px solid #c33;
+      border-bottom: 1px solid pink;
+  }
+  
+input:focus:invalid,
+textarea:focus:invalid, 
+select:focus:invalid {
+color: black;
+border-color: #c33;
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+border-color: #c33;
+box-shadow: 0 0 6px #fcc;
+}
+
+
+/*****Validity******/
+ input:valid + .invalid { /* Adjacent sibling selector */
+ visibility: hidden;
+  }
+  
+  input:invalid + .invalid {
+    visibility: visible;
+  }
+  
+  input:required {
+    border-bottom: 2px solid #c33;
+  }
+  
+  .rq:valid {
+    border-left: 4px solid #c33;
+    border-bottom: 1px solid rgb(143, 228, 143);
+  }
+  
+  .invalid {
+    color: #999;
+  }
+  
