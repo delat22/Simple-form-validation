@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>
+        SIMPLE VALIDATION FORM
+    </h1>
+    <main>
+        <div class="container-1">
+            <form action="" novalidate>
+                <h2>Search</h2>
+                <input type="search" placeholder="search" class="input-1 input-fm" autofocus>
+            </form>
+        </div>
+        
+        <div class="container-2">
+            <form>
+                <h2>Contact Info</h2>
+                <input type="text" placeholder="first and last name" pattern="(.*)\s(.*)"  class="input-2 rq input-fm" required> <div class="invalid">use 'space' to seperate names. e.g 'Aisha Chibuzor'</div>
+                <input type="email" placeholder="email address" required class="input-2 rq input-fm"> <div class="invalid">email address should contain '@'.e.g 'example@gmail.com'</address></div>
+                <input type="tel" placeholder="phone number" required class="input-2 rq input-fm"> <div class="invalid">digits only. e.g '234-xxx-xxx-x'</div>
+                <input type="url" placeholder="web address" class="input-2 input-fm"> 
+
+                <h2>Perferences</h2>
+                <input type="number" placeholder="# of bedrooms" class="input-3 input-fm">
+                <p>Days Until Available to Move</p>
+                <input type="range" min="0" max="120" value="30" class="input-mv input-fm">
+                <span>30</span>
+
+                <input list="direction" placeholder="directional preference" class="input-4 input-fm">
+                <datalist id="direction">
+                    <option value="North"></option>
+                    <option value="South"></option>
+                    <option value="East"></option>
+                    <option value="West"></option>
+                </datalist>
+
+                <input type="color" value="#ffffff"  class="input-5 input-fm">
+                
+                <h2>Available Date</h2>
+                <input type="month" placeholder="June 2020" class="input-6 input-fm">
+                <input type="week" placeholder="Week 26, 2020" class="input-7 input-fm">
+                <input type="datetime-local" placeholder="26-Jun-2016 09:30 AM" class="input-8 input-fm">
+            </form>
+
+            <div class="btn">
+                <button>CANCEL</button>
+                <button>SAVE</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
